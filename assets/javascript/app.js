@@ -48,7 +48,7 @@ $(document).ready(function() {
     });
 
     function displayTimer() {
-        $("#time-remaining").text("seconds remaining: " + secondsRem);
+        $("#time-remaining").text("Seconds Remaining: " + secondsRem);
     };
 
     function secondsCount(){
@@ -80,7 +80,7 @@ $(document).ready(function() {
         clearInterval(secondsRemaining);
         seconds = 0;
         secondsRem = 10;
-        console.log("seconds stopped: " + seconds)
+        console.log("Seconds Stopped: " + seconds)
         
     };
 
@@ -128,9 +128,6 @@ $(document).ready(function() {
         console.log("questionCount: " + questionCount);
         $("#question-box").text(triviaBank[questionCount].question)
 
-        
-        
-    
         // for every question, show the 4 answer choices as buttons
         $("#answer").empty();
         for (var i = 0; i <4; i++){
